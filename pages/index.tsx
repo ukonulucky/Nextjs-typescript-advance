@@ -5,6 +5,9 @@ import Image from 'next/image'
 import ButtonElement from '../components/Button'
 import Button from '../components/Button'
 import Container from '../components/Container'
+import { Box } from '../components/context/Box'
+import { ThemeContextProver } from '../components/context/ThemeContextProvider'
+
 import Greating from '../components/Greating'
 import Heading from '../components/Heading'
 import Input from '../components/Input'
@@ -60,6 +63,9 @@ const Home: NextPage = () => {
       <LoggedIn />
       <User />
       <Counter />
+      <ThemeContextProver>
+      <Box />
+      </ThemeContextProver>
     </div>
   )
 }
